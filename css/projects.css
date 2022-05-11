@@ -88,6 +88,7 @@ h1 {
 h2 {
   color: var(--fg);
   font-size: 20px;
+  margin-top: 50px;
 }
 
 p {
@@ -95,6 +96,22 @@ p {
   margin-top: 5px;
   margin-left: 90px;
   margin-right: 90px;
+}
+
+.parent {
+  list-style-type: disc;
+  margin-left: 110px;
+}
+
+.child {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+.list:hover,
+#list:hover {
+  text-decoration: underline;
+  color: #81e6d9;
 }
 
 .hello {
@@ -108,8 +125,16 @@ p {
   box-shadow: 0 3px 14px rgba(0, 0, 0, 0.3);
 }
 
+.receipt {
+  margin-left: 80px;
+  margin-top: 40px;
+}
+
+.TOC,
 .linux,
-.dotfiles {
+.dotfiles,
+.emacs,
+.neovim {
   padding-top: 5px;
   padding-bottom: 20px;
   margin-left: 80px;
@@ -125,11 +150,14 @@ a {
   text-decoration: none;
 }
 
-#arch:hover {
+#arch:hover,
+#projects:hover,
+#lt:hover,
+#rs:hover,
+#eow:hover,
+#efs:hover {
   text-decoration: underline;
-}
-#lt:hover {
-  text-decoration: underline;
+  color: #ff63c3;
 }
 
 hr {
@@ -144,16 +172,17 @@ hr {
 }
 
 .btn {
-  margin-top: 20px;
-  border: 1px solid #50fa7b5e;
-  background: #50fa7b5e;
-  padding: 10px 20px;
+  margin-top: 10px;
+  border: 1px solid #50fa7b;
+  background: none;
+  padding: 10px 40px;
   border-radius: 5px;
 }
 
-.btn:hover {
-  background: #50fa7b;
-  transition: 0.5s;
+.btn:hover,
+.btn-emacs:hover {
+  background: #50fa7b5e;
+  transition: 0.3s;
 }
 
 footer p {

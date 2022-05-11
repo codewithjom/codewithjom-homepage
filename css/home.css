@@ -158,20 +158,31 @@ a {
   text-decoration: none;
 }
 
-.online {
-  display: inline-flex;
-  background: #81e6d91c;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.online:hover {
-  background: #81e6d98a;
-  color: var(--bg);
-}
-
 #web:hover {
   text-decoration: underline;
+  color: #ff63c3;
+}
+
+.btn-container {
+  text-align: left;
+  margin-left: 90px;
+}
+
+.btn {
+  font-size: 15px;
+  border: none;
+  background: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #81e6d91c;
+  transition: 0.5s;
+}
+
+#online:hover {
+  color: #81e6d9;
 }
 
 footer p {
